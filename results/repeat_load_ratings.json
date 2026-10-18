@@ -1,0 +1,37 @@
+{
+  "executed_at_utc": "2026-10-18T14:41:27.075507+00:00",
+  "seconds": 43.4608,
+  "query": "CALL apoc.periodic.iterate(\n  \"LOAD CSV WITH HEADERS FROM 'file:///ratings.csv' AS row RETURN row\",\n  \"MATCH (u:User {userId:toInteger(row.userId)})\n   MATCH (m:Movie {movieId:toInteger(row.movieId)})\n   MERGE (u)-[r:RATED]->(m)\n   SET r.rating=toInteger(row.rating), r.timestamp=toInteger(row.timestamp)\",\n  {batchSize:5000, parallel:false}\n) YIELD batches,total,failedBatches,failedOperations,errorMessages\nRETURN batches,total,failedBatches,failedOperations,errorMessages",
+  "columns": [
+    "batches",
+    "total",
+    "failedBatches",
+    "failedOperations",
+    "errorMessages"
+  ],
+  "rows": [
+    {
+      "batches": 201,
+      "total": 1000209,
+      "failedBatches": 0,
+      "failedOperations": 0,
+      "errorMessages": {}
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

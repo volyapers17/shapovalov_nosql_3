@@ -1,0 +1,149 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:13.431360+00:00",
+  "seconds": 0.463,
+  "query": "MATCH (n)\nWITH n,COUNT { (n)-[:RATED|HAS_GENRE]-() } AS degree\nRETURN labels(n)[0] AS label,coalesce(n.title,n.name,toString(n.userId)) AS node,\n       coalesce(n.movieId,n.userId) AS entityId,degree\nORDER BY degree DESC,label,node LIMIT 20",
+  "columns": [
+    "label",
+    "node",
+    "entityId",
+    "degree"
+  ],
+  "rows": [
+    {
+      "label": "Movie",
+      "node": "American Beauty (1999)",
+      "entityId": 2858,
+      "degree": 3430
+    },
+    {
+      "label": "Movie",
+      "node": "Star Wars: Episode IV - A New Hope (1977)",
+      "entityId": 260,
+      "degree": 2995
+    },
+    {
+      "label": "Movie",
+      "node": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "entityId": 1196,
+      "degree": 2995
+    },
+    {
+      "label": "Movie",
+      "node": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "entityId": 1210,
+      "degree": 2888
+    },
+    {
+      "label": "Movie",
+      "node": "Jurassic Park (1993)",
+      "entityId": 480,
+      "degree": 2675
+    },
+    {
+      "label": "Movie",
+      "node": "Saving Private Ryan (1998)",
+      "entityId": 2028,
+      "degree": 2656
+    },
+    {
+      "label": "Movie",
+      "node": "Terminator 2: Judgment Day (1991)",
+      "entityId": 589,
+      "degree": 2652
+    },
+    {
+      "label": "Movie",
+      "node": "Matrix, The (1999)",
+      "entityId": 2571,
+      "degree": 2593
+    },
+    {
+      "label": "Movie",
+      "node": "Back to the Future (1985)",
+      "entityId": 1270,
+      "degree": 2585
+    },
+    {
+      "label": "Movie",
+      "node": "Silence of the Lambs, The (1991)",
+      "entityId": 593,
+      "degree": 2580
+    },
+    {
+      "label": "Movie",
+      "node": "Men in Black (1997)",
+      "entityId": 1580,
+      "degree": 2542
+    },
+    {
+      "label": "Movie",
+      "node": "Fargo (1996)",
+      "entityId": 608,
+      "degree": 2516
+    },
+    {
+      "label": "Movie",
+      "node": "Raiders of the Lost Ark (1981)",
+      "entityId": 1198,
+      "degree": 2516
+    },
+    {
+      "label": "Movie",
+      "node": "Sixth Sense, The (1999)",
+      "entityId": 2762,
+      "degree": 2460
+    },
+    {
+      "label": "Movie",
+      "node": "Braveheart (1995)",
+      "entityId": 110,
+      "degree": 2446
+    },
+    {
+      "label": "Movie",
+      "node": "Shakespeare in Love (1998)",
+      "entityId": 2396,
+      "degree": 2371
+    },
+    {
+      "label": "Movie",
+      "node": "Princess Bride, The (1987)",
+      "entityId": 1197,
+      "degree": 2322
+    },
+    {
+      "label": "User",
+      "node": "4169",
+      "entityId": 4169,
+      "degree": 2314
+    },
+    {
+      "label": "Movie",
+      "node": "Schindler's List (1993)",
+      "entityId": 527,
+      "degree": 2306
+    },
+    {
+      "label": "Movie",
+      "node": "L.A. Confidential (1997)",
+      "entityId": 1617,
+      "degree": 2292
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

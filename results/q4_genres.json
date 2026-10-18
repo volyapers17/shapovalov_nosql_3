@@ -1,0 +1,194 @@
+{
+  "executed_at_utc": "2026-10-18T14:37:53.706199+00:00",
+  "seconds": 2.3672,
+  "query": "// \"Стабільно високі\": середнє >= 4, >= 1000 оцінок, >= 70% оцінок 4–5.\n// Виводимо ВСІ жанри й прапорець, щоб не приховувати негативний результат.\nMATCH (g:Genre)<-[:HAS_GENRE]-(m:Movie)<-[r:RATED]-(:User)\nWITH g,count(r) AS ratingCount,count(DISTINCT m) AS ratedMovies,\n     avg(r.rating) AS averageRating,stDevP(r.rating) AS ratingStdDev,\n     avg(CASE WHEN r.rating >= 4 THEN 1.0 ELSE 0.0 END) AS highRatingShare\nRETURN g.name AS genre,averageRating,ratingCount,ratedMovies,ratingStdDev,highRatingShare,\n       averageRating >= 4 AND ratingCount >= 1000 AND highRatingShare >= 0.70 AS consistentlyHigh\nORDER BY averageRating DESC,genre",
+  "columns": [
+    "genre",
+    "averageRating",
+    "ratingCount",
+    "ratedMovies",
+    "ratingStdDev",
+    "highRatingShare",
+    "consistentlyHigh"
+  ],
+  "rows": [
+    {
+      "genre": "Film-Noir",
+      "averageRating": 4.0751875581840995,
+      "ratingCount": 18261,
+      "ratedMovies": 44,
+      "ratingStdDev": 0.9326409540381446,
+      "highRatingShare": 0.7634850227260279,
+      "consistentlyHigh": true
+    },
+    {
+      "genre": "Documentary",
+      "averageRating": 3.9331226295828037,
+      "ratingCount": 7910,
+      "ratedMovies": 110,
+      "ratingStdDev": 1.0330580009153816,
+      "highRatingShare": 0.7226295828065754,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "War",
+      "averageRating": 3.893326717935977,
+      "ratingCount": 68527,
+      "ratedMovies": 141,
+      "ratingStdDev": 1.0652821017509144,
+      "highRatingShare": 0.6937703386986084,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Drama",
+      "averageRating": 3.7663322323420485,
+      "ratingCount": 354529,
+      "ratedMovies": 1493,
+      "ratingStdDev": 1.0457824202942105,
+      "highRatingShare": 0.6443478530670187,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Crime",
+      "averageRating": 3.7086785431413016,
+      "ratingCount": 79541,
+      "ratedMovies": 201,
+      "ratingStdDev": 1.0777327551617932,
+      "highRatingShare": 0.6203970279478503,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Animation",
+      "averageRating": 3.684868223500346,
+      "ratingCount": 43293,
+      "ratedMovies": 105,
+      "ratingStdDev": 1.0820587375786737,
+      "highRatingShare": 0.6152495784537892,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Mystery",
+      "averageRating": 3.6681019463388203,
+      "ratingCount": 40178,
+      "ratedMovies": 104,
+      "ratingStdDev": 1.0867258880772543,
+      "highRatingShare": 0.6048086017223304,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Musical",
+      "averageRating": 3.665518984903561,
+      "ratingCount": 41533,
+      "ratedMovies": 113,
+      "ratingStdDev": 1.1010551685761274,
+      "highRatingShare": 0.6046035682469387,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Western",
+      "averageRating": 3.6377701493980594,
+      "ratingCount": 20683,
+      "ratedMovies": 67,
+      "ratingStdDev": 1.0998185439573915,
+      "highRatingShare": 0.5952231301068492,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Romance",
+      "averageRating": 3.6074645987405587,
+      "ratingCount": 147523,
+      "ratedMovies": 459,
+      "ratingStdDev": 1.066751402860901,
+      "highRatingShare": 0.5795638646177185,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Thriller",
+      "averageRating": 3.5704660480809407,
+      "ratingCount": 189680,
+      "ratedMovies": 485,
+      "ratingStdDev": 1.1066403393066353,
+      "highRatingShare": 0.5705187684521351,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Comedy",
+      "averageRating": 3.5220988277525245,
+      "ratingCount": 356580,
+      "ratedMovies": 1163,
+      "ratingStdDev": 1.1207245444388152,
+      "highRatingShare": 0.5523164507263383,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Action",
+      "averageRating": 3.4911849357368325,
+      "ratingCount": 257457,
+      "ratedMovies": 495,
+      "ratingStdDev": 1.133468751989801,
+      "highRatingShare": 0.5389870929902982,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Adventure",
+      "averageRating": 3.477256948332627,
+      "ratingCount": 133953,
+      "ratedMovies": 281,
+      "ratingStdDev": 1.1294593878614732,
+      "highRatingShare": 0.5296708547027662,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Sci-Fi",
+      "averageRating": 3.4665212913397987,
+      "ratingCount": 157294,
+      "ratedMovies": 274,
+      "ratingStdDev": 1.157235554105423,
+      "highRatingShare": 0.5289267232062221,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Fantasy",
+      "averageRating": 3.4473705958513476,
+      "ratingCount": 36301,
+      "ratedMovies": 68,
+      "ratingStdDev": 1.1331641924784477,
+      "highRatingShare": 0.5155229883474296,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Children's",
+      "averageRating": 3.422034743579103,
+      "ratingCount": 72186,
+      "ratedMovies": 250,
+      "ratingStdDev": 1.1608728346327755,
+      "highRatingShare": 0.5164159255257208,
+      "consistentlyHigh": false
+    },
+    {
+      "genre": "Horror",
+      "averageRating": 3.2150132223182175,
+      "ratingCount": 76386,
+      "ratedMovies": 339,
+      "ratingStdDev": 1.225522911827017,
+      "highRatingShare": 0.44625978582462744,
+      "consistentlyHigh": false
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

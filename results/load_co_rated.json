@@ -1,0 +1,35 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:22.107418+00:00",
+  "seconds": 6.1848,
+  "query": "CALL apoc.periodic.iterate(\n  \"LOAD CSV WITH HEADERS FROM 'file:///co_rated.csv' AS row RETURN row\",\n  \"MATCH (a:Movie {movieId:toInteger(row.source)}),(b:Movie {movieId:toInteger(row.target)})\n   MERGE (a)-[r:CO_RATED]->(b) SET r.weight=toInteger(row.weight)\",\n  {batchSize:1000,parallel:false}\n) YIELD total,failedBatches,failedOperations,errorMessages\nRETURN total,failedBatches,failedOperations,errorMessages",
+  "columns": [
+    "total",
+    "failedBatches",
+    "failedOperations",
+    "errorMessages"
+  ],
+  "rows": [
+    {
+      "total": 50000,
+      "failedBatches": 0,
+      "failedOperations": 0,
+      "errorMessages": {}
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

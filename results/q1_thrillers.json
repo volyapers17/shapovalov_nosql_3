@@ -1,0 +1,341 @@
+{
+  "executed_at_utc": "2026-10-18T14:37:50.269227+00:00",
+  "seconds": 0.9617,
+  "query": "// Усі Thriller із середнім рейтингом строго > 4.0, без прихованого LIMIT.\nMATCH (m:Movie)-[:HAS_GENRE]->(:Genre {name:'Thriller'})\nMATCH (:User)-[r:RATED]->(m)\nWITH m,avg(r.rating) AS averageRating,count(r) AS ratingCount\nWHERE averageRating > 4.0\nRETURN m.movieId AS movieId,m.title AS title,averageRating,ratingCount\nORDER BY averageRating DESC,ratingCount DESC,movieId",
+  "columns": [
+    "movieId",
+    "title",
+    "averageRating",
+    "ratingCount"
+  ],
+  "rows": [
+    {
+      "movieId": 745,
+      "title": "Close Shave, A (1995)",
+      "averageRating": 4.520547945205482,
+      "ratingCount": 657
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "averageRating": 4.5171060011216975,
+      "ratingCount": 1783
+    },
+    {
+      "movieId": 904,
+      "title": "Rear Window (1954)",
+      "averageRating": 4.47619047619048,
+      "ratingCount": 1050
+    },
+    {
+      "movieId": 1212,
+      "title": "Third Man, The (1949)",
+      "averageRating": 4.452083333333336,
+      "ratingCount": 480
+    },
+    {
+      "movieId": 2762,
+      "title": "Sixth Sense, The (1999)",
+      "averageRating": 4.406262708418047,
+      "ratingCount": 2459
+    },
+    {
+      "movieId": 908,
+      "title": "North by Northwest (1959)",
+      "averageRating": 4.384030418250953,
+      "ratingCount": 1315
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "averageRating": 4.35182311869668,
+      "ratingCount": 2578
+    },
+    {
+      "movieId": 1252,
+      "title": "Chinatown (1974)",
+      "averageRating": 4.339240506329117,
+      "ratingCount": 1185
+    },
+    {
+      "movieId": 1267,
+      "title": "Manchurian Candidate, The (1962)",
+      "averageRating": 4.333333333333331,
+      "ratingCount": 765
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "averageRating": 4.315830115830114,
+      "ratingCount": 2590
+    },
+    {
+      "movieId": 2186,
+      "title": "Strangers on a Train (1951)",
+      "averageRating": 4.304979253112036,
+      "ratingCount": 482
+    },
+    {
+      "movieId": 1260,
+      "title": "M (1931)",
+      "averageRating": 4.3019480519480515,
+      "ratingCount": 308
+    },
+    {
+      "movieId": 930,
+      "title": "Notorious (1946)",
+      "averageRating": 4.29438202247191,
+      "ratingCount": 445
+    },
+    {
+      "movieId": 903,
+      "title": "Vertigo (1958)",
+      "averageRating": 4.272928176795588,
+      "ratingCount": 905
+    },
+    {
+      "movieId": 2203,
+      "title": "Shadow of a Doubt (1943)",
+      "averageRating": 4.270386266094417,
+      "ratingCount": 233
+    },
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "averageRating": 4.254675686430576,
+      "ratingCount": 2513
+    },
+    {
+      "movieId": 3634,
+      "title": "Seven Days in May (1964)",
+      "averageRating": 4.254545454545452,
+      "ratingCount": 165
+    },
+    {
+      "movieId": 678,
+      "title": "Some Folks Call It a Sling Blade (1993)",
+      "averageRating": 4.245098039215687,
+      "ratingCount": 306
+    },
+    {
+      "movieId": 1617,
+      "title": "L.A. Confidential (1997)",
+      "averageRating": 4.219405594405585,
+      "ratingCount": 2288
+    },
+    {
+      "movieId": 1219,
+      "title": "Psycho (1960)",
+      "averageRating": 4.218527315914492,
+      "ratingCount": 1263
+    },
+    {
+      "movieId": 1248,
+      "title": "Touch of Evil (1958)",
+      "averageRating": 4.215953307392994,
+      "ratingCount": 514
+    },
+    {
+      "movieId": 1358,
+      "title": "Sling Blade (1996)",
+      "averageRating": 4.2081563296516595,
+      "ratingCount": 1177
+    },
+    {
+      "movieId": 928,
+      "title": "Rebecca (1940)",
+      "averageRating": 4.204663212435231,
+      "ratingCount": 386
+    },
+    {
+      "movieId": 1218,
+      "title": "Killer, The (Die xue shuang xiong) (1989)",
+      "averageRating": 4.196721311475408,
+      "ratingCount": 244
+    },
+    {
+      "movieId": 2208,
+      "title": "Lady Vanishes, The (1938)",
+      "averageRating": 4.185929648241207,
+      "ratingCount": 199
+    },
+    {
+      "movieId": 111,
+      "title": "Taxi Driver (1976)",
+      "averageRating": 4.183870967741934,
+      "ratingCount": 1240
+    },
+    {
+      "movieId": 911,
+      "title": "Charade (1963)",
+      "averageRating": 4.183006535947711,
+      "ratingCount": 306
+    },
+    {
+      "movieId": 1269,
+      "title": "Arsenic and Old Lace (1944)",
+      "averageRating": 4.16815476190476,
+      "ratingCount": 672
+    },
+    {
+      "movieId": 1214,
+      "title": "Alien (1979)",
+      "averageRating": 4.159584980237154,
+      "ratingCount": 2024
+    },
+    {
+      "movieId": 3147,
+      "title": "Green Mile, The (1999)",
+      "averageRating": 4.154664484451714,
+      "ratingCount": 1222
+    },
+    {
+      "movieId": 1240,
+      "title": "Terminator, The (1984)",
+      "averageRating": 4.152049571020022,
+      "ratingCount": 2098
+    },
+    {
+      "movieId": 1089,
+      "title": "Reservoir Dogs (1992)",
+      "averageRating": 4.135822081016675,
+      "ratingCount": 1259
+    },
+    {
+      "movieId": 1200,
+      "title": "Aliens (1986)",
+      "averageRating": 4.125824175824171,
+      "ratingCount": 1820
+    },
+    {
+      "movieId": 1036,
+      "title": "Die Hard (1988)",
+      "averageRating": 4.121848739495792,
+      "ratingCount": 1666
+    },
+    {
+      "movieId": 47,
+      "title": "Seven (Se7en) (1995)",
+      "averageRating": 4.106420404573441,
+      "ratingCount": 1137
+    },
+    {
+      "movieId": 293,
+      "title": "Professional, The (a.k.a. Leon: The Professional) (1994)",
+      "averageRating": 4.10617551462622,
+      "ratingCount": 923
+    },
+    {
+      "movieId": 457,
+      "title": "Fugitive, The (1993)",
+      "averageRating": 4.103258145363412,
+      "ratingCount": 1995
+    },
+    {
+      "movieId": 933,
+      "title": "To Catch a Thief (1955)",
+      "averageRating": 4.10158013544018,
+      "ratingCount": 443
+    },
+    {
+      "movieId": 1953,
+      "title": "French Connection, The (1971)",
+      "averageRating": 4.098722415795586,
+      "ratingCount": 861
+    },
+    {
+      "movieId": 906,
+      "title": "Gaslight (1944)",
+      "averageRating": 4.096256684491981,
+      "ratingCount": 187
+    },
+    {
+      "movieId": 3334,
+      "title": "Key Largo (1948)",
+      "averageRating": 4.082429501084601,
+      "ratingCount": 461
+    },
+    {
+      "movieId": 1086,
+      "title": "Dial M for Murder (1954)",
+      "averageRating": 4.079155672823219,
+      "ratingCount": 379
+    },
+    {
+      "movieId": 965,
+      "title": "39 Steps, The (1935)",
+      "averageRating": 4.0750988142292455,
+      "ratingCount": 253
+    },
+    {
+      "movieId": 924,
+      "title": "2001: A Space Odyssey (1968)",
+      "averageRating": 4.068764568764563,
+      "ratingCount": 1716
+    },
+    {
+      "movieId": 589,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "averageRating": 4.058512646281609,
+      "ratingCount": 2649
+    },
+    {
+      "movieId": 1264,
+      "title": "Diva (1981)",
+      "averageRating": 4.054474708171205,
+      "ratingCount": 257
+    },
+    {
+      "movieId": 1610,
+      "title": "Hunt for Red October, The (1990)",
+      "averageRating": 4.05205811138014,
+      "ratingCount": 1652
+    },
+    {
+      "movieId": 3849,
+      "title": "Spiral Staircase, The (1946)",
+      "averageRating": 4.046511627906977,
+      "ratingCount": 43
+    },
+    {
+      "movieId": 2819,
+      "title": "Three Days of the Condor (1975)",
+      "averageRating": 4.0407523510971775,
+      "ratingCount": 319
+    },
+    {
+      "movieId": 2917,
+      "title": "Body Heat (1981)",
+      "averageRating": 4.031746031746032,
+      "ratingCount": 504
+    },
+    {
+      "movieId": 2206,
+      "title": "Suspicion (1941)",
+      "averageRating": 4.011976047904193,
+      "ratingCount": 167
+    },
+    {
+      "movieId": 1249,
+      "title": "Nikita (La Femme Nikita) (1990)",
+      "averageRating": 4.005457025920881,
+      "ratingCount": 733
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

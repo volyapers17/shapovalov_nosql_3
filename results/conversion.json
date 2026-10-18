@@ -1,0 +1,43 @@
+{
+  "archive_sha256": "a6898adb50b9ca05aa231689da44c217cb524e7ebd39d264c56e2832f2c54e20",
+  "movies": 3883,
+  "users": 6040,
+  "ratings": 1000209,
+  "genres": 18,
+  "has_genre": 6408,
+  "genre_movie_counts": {
+    "Action": 503,
+    "Adventure": 283,
+    "Animation": 105,
+    "Children's": 251,
+    "Comedy": 1200,
+    "Crime": 211,
+    "Documentary": 127,
+    "Drama": 1603,
+    "Fantasy": 68,
+    "Film-Noir": 44,
+    "Horror": 343,
+    "Musical": 114,
+    "Mystery": 106,
+    "Romance": 471,
+    "Sci-Fi": 276,
+    "Thriller": 492,
+    "War": 143,
+    "Western": 68
+  },
+  "rating_distribution": {
+    "1": 56174,
+    "2": 107557,
+    "3": 261197,
+    "4": 348971,
+    "5": 226310
+  },
+  "minimum_ratings_per_user": 20,
+  "duplicate_user_movie_pairs": 0,
+  "orphan_ratings": 0,
+  "csv_sha256": {
+    "movies.csv": "c1c559ae735d520b14da223fd4ab7309990351f03af562e1982e6a4d8cb0b757",
+    "ratings.csv": "94ee88d4eac124d6c72e178994ab3f285484faa5e01ef9c037c9c324b836501a",
+    "users.csv": "5af8b5cf71e927c77ccd4544668e4b38d2ffcfe4d2e596c535233f5ae9a410dc"
+  }
+}

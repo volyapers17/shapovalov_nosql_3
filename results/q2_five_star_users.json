@@ -1,0 +1,5587 @@
+{
+  "executed_at_utc": "2026-10-18T14:37:51.092814+00:00",
+  "seconds": 0.822,
+  "query": "MATCH (u:User)-[r:RATED]->(m:Movie)\nWHERE r.rating=5\nWITH u,count(DISTINCT m) AS fiveStarMovies\nWHERE fiveStarMovies > 50\nRETURN u.userId AS userId,fiveStarMovies\nORDER BY fiveStarMovies DESC,userId",
+  "columns": [
+    "userId",
+    "fiveStarMovies"
+  ],
+  "rows": [
+    {
+      "userId": 4277,
+      "fiveStarMovies": 571
+    },
+    {
+      "userId": 4169,
+      "fiveStarMovies": 476
+    },
+    {
+      "userId": 3032,
+      "fiveStarMovies": 466
+    },
+    {
+      "userId": 4448,
+      "fiveStarMovies": 434
+    },
+    {
+      "userId": 5100,
+      "fiveStarMovies": 424
+    },
+    {
+      "userId": 1680,
+      "fiveStarMovies": 406
+    },
+    {
+      "userId": 549,
+      "fiveStarMovies": 402
+    },
+    {
+      "userId": 2909,
+      "fiveStarMovies": 396
+    },
+    {
+      "userId": 3391,
+      "fiveStarMovies": 387
+    },
+    {
+      "userId": 1285,
+      "fiveStarMovies": 377
+    },
+    {
+      "userId": 1835,
+      "fiveStarMovies": 367
+    },
+    {
+      "userId": 2124,
+      "fiveStarMovies": 357
+    },
+    {
+      "userId": 53,
+      "fiveStarMovies": 353
+    },
+    {
+      "userId": 3539,
+      "fiveStarMovies": 353
+    },
+    {
+      "userId": 2507,
+      "fiveStarMovies": 334
+    },
+    {
+      "userId": 5795,
+      "fiveStarMovies": 314
+    },
+    {
+      "userId": 1015,
+      "fiveStarMovies": 308
+    },
+    {
+      "userId": 5954,
+      "fiveStarMovies": 301
+    },
+    {
+      "userId": 3292,
+      "fiveStarMovies": 296
+    },
+    {
+      "userId": 2793,
+      "fiveStarMovies": 294
+    },
+    {
+      "userId": 1698,
+      "fiveStarMovies": 282
+    },
+    {
+      "userId": 5511,
+      "fiveStarMovies": 278
+    },
+    {
+      "userId": 412,
+      "fiveStarMovies": 272
+    },
+    {
+      "userId": 5504,
+      "fiveStarMovies": 270
+    },
+    {
+      "userId": 1741,
+      "fiveStarMovies": 269
+    },
+    {
+      "userId": 195,
+      "fiveStarMovies": 262
+    },
+    {
+      "userId": 424,
+      "fiveStarMovies": 260
+    },
+    {
+      "userId": 1448,
+      "fiveStarMovies": 259
+    },
+    {
+      "userId": 3163,
+      "fiveStarMovies": 258
+    },
+    {
+      "userId": 4028,
+      "fiveStarMovies": 257
+    },
+    {
+      "userId": 4904,
+      "fiveStarMovies": 256
+    },
+    {
+      "userId": 543,
+      "fiveStarMovies": 254
+    },
+    {
+      "userId": 4802,
+      "fiveStarMovies": 254
+    },
+    {
+      "userId": 1983,
+      "fiveStarMovies": 250
+    },
+    {
+      "userId": 4354,
+      "fiveStarMovies": 250
+    },
+    {
+      "userId": 1333,
+      "fiveStarMovies": 248
+    },
+    {
+      "userId": 524,
+      "fiveStarMovies": 246
+    },
+    {
+      "userId": 5614,
+      "fiveStarMovies": 244
+    },
+    {
+      "userId": 1586,
+      "fiveStarMovies": 241
+    },
+    {
+      "userId": 1635,
+      "fiveStarMovies": 241
+    },
+    {
+      "userId": 1645,
+      "fiveStarMovies": 239
+    },
+    {
+      "userId": 1051,
+      "fiveStarMovies": 238
+    },
+    {
+      "userId": 3029,
+      "fiveStarMovies": 238
+    },
+    {
+      "userId": 3834,
+      "fiveStarMovies": 235
+    },
+    {
+      "userId": 3842,
+      "fiveStarMovies": 234
+    },
+    {
+      "userId": 4411,
+      "fiveStarMovies": 234
+    },
+    {
+      "userId": 5046,
+      "fiveStarMovies": 234
+    },
+    {
+      "userId": 839,
+      "fiveStarMovies": 228
+    },
+    {
+      "userId": 1224,
+      "fiveStarMovies": 227
+    },
+    {
+      "userId": 1451,
+      "fiveStarMovies": 227
+    },
+    {
+      "userId": 3067,
+      "fiveStarMovies": 225
+    },
+    {
+      "userId": 2073,
+      "fiveStarMovies": 223
+    },
+    {
+      "userId": 4021,
+      "fiveStarMovies": 222
+    },
+    {
+      "userId": 1746,
+      "fiveStarMovies": 221
+    },
+    {
+      "userId": 2340,
+      "fiveStarMovies": 221
+    },
+    {
+      "userId": 2203,
+      "fiveStarMovies": 220
+    },
+    {
+      "userId": 4086,
+      "fiveStarMovies": 218
+    },
+    {
+      "userId": 5317,
+      "fiveStarMovies": 218
+    },
+    {
+      "userId": 5812,
+      "fiveStarMovies": 217
+    },
+    {
+      "userId": 3080,
+      "fiveStarMovies": 216
+    },
+    {
+      "userId": 5878,
+      "fiveStarMovies": 216
+    },
+    {
+      "userId": 3681,
+      "fiveStarMovies": 215
+    },
+    {
+      "userId": 1926,
+      "fiveStarMovies": 214
+    },
+    {
+      "userId": 1425,
+      "fiveStarMovies": 213
+    },
+    {
+      "userId": 5111,
+      "fiveStarMovies": 212
+    },
+    {
+      "userId": 550,
+      "fiveStarMovies": 211
+    },
+    {
+      "userId": 1812,
+      "fiveStarMovies": 211
+    },
+    {
+      "userId": 4048,
+      "fiveStarMovies": 211
+    },
+    {
+      "userId": 3476,
+      "fiveStarMovies": 210
+    },
+    {
+      "userId": 4344,
+      "fiveStarMovies": 209
+    },
+    {
+      "userId": 5015,
+      "fiveStarMovies": 209
+    },
+    {
+      "userId": 1980,
+      "fiveStarMovies": 208
+    },
+    {
+      "userId": 5948,
+      "fiveStarMovies": 208
+    },
+    {
+      "userId": 2841,
+      "fiveStarMovies": 206
+    },
+    {
+      "userId": 5090,
+      "fiveStarMovies": 206
+    },
+    {
+      "userId": 731,
+      "fiveStarMovies": 201
+    },
+    {
+      "userId": 3792,
+      "fiveStarMovies": 200
+    },
+    {
+      "userId": 4647,
+      "fiveStarMovies": 199
+    },
+    {
+      "userId": 5000,
+      "fiveStarMovies": 199
+    },
+    {
+      "userId": 5329,
+      "fiveStarMovies": 199
+    },
+    {
+      "userId": 3503,
+      "fiveStarMovies": 198
+    },
+    {
+      "userId": 3916,
+      "fiveStarMovies": 197
+    },
+    {
+      "userId": 4386,
+      "fiveStarMovies": 196
+    },
+    {
+      "userId": 3590,
+      "fiveStarMovies": 194
+    },
+    {
+      "userId": 5312,
+      "fiveStarMovies": 193
+    },
+    {
+      "userId": 173,
+      "fiveStarMovies": 189
+    },
+    {
+      "userId": 2030,
+      "fiveStarMovies": 189
+    },
+    {
+      "userId": 3688,
+      "fiveStarMovies": 189
+    },
+    {
+      "userId": 3841,
+      "fiveStarMovies": 188
+    },
+    {
+      "userId": 5763,
+      "fiveStarMovies": 188
+    },
+    {
+      "userId": 5964,
+      "fiveStarMovies": 188
+    },
+    {
+      "userId": 5682,
+      "fiveStarMovies": 187
+    },
+    {
+      "userId": 2244,
+      "fiveStarMovies": 186
+    },
+    {
+      "userId": 4748,
+      "fiveStarMovies": 186
+    },
+    {
+      "userId": 948,
+      "fiveStarMovies": 185
+    },
+    {
+      "userId": 1671,
+      "fiveStarMovies": 184
+    },
+    {
+      "userId": 4033,
+      "fiveStarMovies": 184
+    },
+    {
+      "userId": 2581,
+      "fiveStarMovies": 182
+    },
+    {
+      "userId": 3224,
+      "fiveStarMovies": 182
+    },
+    {
+      "userId": 3769,
+      "fiveStarMovies": 181
+    },
+    {
+      "userId": 149,
+      "fiveStarMovies": 180
+    },
+    {
+      "userId": 1306,
+      "fiveStarMovies": 180
+    },
+    {
+      "userId": 1941,
+      "fiveStarMovies": 180
+    },
+    {
+      "userId": 4816,
+      "fiveStarMovies": 179
+    },
+    {
+      "userId": 3592,
+      "fiveStarMovies": 177
+    },
+    {
+      "userId": 1836,
+      "fiveStarMovies": 176
+    },
+    {
+      "userId": 2181,
+      "fiveStarMovies": 176
+    },
+    {
+      "userId": 3650,
+      "fiveStarMovies": 176
+    },
+    {
+      "userId": 5074,
+      "fiveStarMovies": 176
+    },
+    {
+      "userId": 1343,
+      "fiveStarMovies": 175
+    },
+    {
+      "userId": 1764,
+      "fiveStarMovies": 175
+    },
+    {
+      "userId": 3885,
+      "fiveStarMovies": 174
+    },
+    {
+      "userId": 1717,
+      "fiveStarMovies": 173
+    },
+    {
+      "userId": 5443,
+      "fiveStarMovies": 173
+    },
+    {
+      "userId": 1842,
+      "fiveStarMovies": 172
+    },
+    {
+      "userId": 4888,
+      "fiveStarMovies": 171
+    },
+    {
+      "userId": 235,
+      "fiveStarMovies": 170
+    },
+    {
+      "userId": 1211,
+      "fiveStarMovies": 170
+    },
+    {
+      "userId": 1242,
+      "fiveStarMovies": 170
+    },
+    {
+      "userId": 3201,
+      "fiveStarMovies": 170
+    },
+    {
+      "userId": 3558,
+      "fiveStarMovies": 170
+    },
+    {
+      "userId": 714,
+      "fiveStarMovies": 169
+    },
+    {
+      "userId": 1068,
+      "fiveStarMovies": 169
+    },
+    {
+      "userId": 1120,
+      "fiveStarMovies": 169
+    },
+    {
+      "userId": 161,
+      "fiveStarMovies": 168
+    },
+    {
+      "userId": 1591,
+      "fiveStarMovies": 168
+    },
+    {
+      "userId": 2168,
+      "fiveStarMovies": 168
+    },
+    {
+      "userId": 1676,
+      "fiveStarMovies": 167
+    },
+    {
+      "userId": 2583,
+      "fiveStarMovies": 167
+    },
+    {
+      "userId": 3308,
+      "fiveStarMovies": 167
+    },
+    {
+      "userId": 3507,
+      "fiveStarMovies": 167
+    },
+    {
+      "userId": 5522,
+      "fiveStarMovies": 167
+    },
+    {
+      "userId": 1112,
+      "fiveStarMovies": 165
+    },
+    {
+      "userId": 4801,
+      "fiveStarMovies": 165
+    },
+    {
+      "userId": 352,
+      "fiveStarMovies": 164
+    },
+    {
+      "userId": 4682,
+      "fiveStarMovies": 164
+    },
+    {
+      "userId": 4819,
+      "fiveStarMovies": 163
+    },
+    {
+      "userId": 1699,
+      "fiveStarMovies": 162
+    },
+    {
+      "userId": 5841,
+      "fiveStarMovies": 161
+    },
+    {
+      "userId": 4305,
+      "fiveStarMovies": 160
+    },
+    {
+      "userId": 2015,
+      "fiveStarMovies": 159
+    },
+    {
+      "userId": 3365,
+      "fiveStarMovies": 159
+    },
+    {
+      "userId": 3823,
+      "fiveStarMovies": 159
+    },
+    {
+      "userId": 1389,
+      "fiveStarMovies": 158
+    },
+    {
+      "userId": 2529,
+      "fiveStarMovies": 158
+    },
+    {
+      "userId": 5103,
+      "fiveStarMovies": 158
+    },
+    {
+      "userId": 5996,
+      "fiveStarMovies": 158
+    },
+    {
+      "userId": 869,
+      "fiveStarMovies": 157
+    },
+    {
+      "userId": 1117,
+      "fiveStarMovies": 156
+    },
+    {
+      "userId": 1969,
+      "fiveStarMovies": 156
+    },
+    {
+      "userId": 2092,
+      "fiveStarMovies": 155
+    },
+    {
+      "userId": 2907,
+      "fiveStarMovies": 155
+    },
+    {
+      "userId": 3902,
+      "fiveStarMovies": 155
+    },
+    {
+      "userId": 4673,
+      "fiveStarMovies": 155
+    },
+    {
+      "userId": 10,
+      "fiveStarMovies": 154
+    },
+    {
+      "userId": 716,
+      "fiveStarMovies": 153
+    },
+    {
+      "userId": 4408,
+      "fiveStarMovies": 153
+    },
+    {
+      "userId": 2088,
+      "fiveStarMovies": 152
+    },
+    {
+      "userId": 4107,
+      "fiveStarMovies": 152
+    },
+    {
+      "userId": 331,
+      "fiveStarMovies": 151
+    },
+    {
+      "userId": 1137,
+      "fiveStarMovies": 151
+    },
+    {
+      "userId": 3963,
+      "fiveStarMovies": 151
+    },
+    {
+      "userId": 4489,
+      "fiveStarMovies": 151
+    },
+    {
+      "userId": 5156,
+      "fiveStarMovies": 151
+    },
+    {
+      "userId": 1447,
+      "fiveStarMovies": 150
+    },
+    {
+      "userId": 1943,
+      "fiveStarMovies": 150
+    },
+    {
+      "userId": 3780,
+      "fiveStarMovies": 150
+    },
+    {
+      "userId": 2293,
+      "fiveStarMovies": 149
+    },
+    {
+      "userId": 58,
+      "fiveStarMovies": 148
+    },
+    {
+      "userId": 2691,
+      "fiveStarMovies": 148
+    },
+    {
+      "userId": 4732,
+      "fiveStarMovies": 148
+    },
+    {
+      "userId": 1790,
+      "fiveStarMovies": 147
+    },
+    {
+      "userId": 4238,
+      "fiveStarMovies": 146
+    },
+    {
+      "userId": 770,
+      "fiveStarMovies": 145
+    },
+    {
+      "userId": 3367,
+      "fiveStarMovies": 145
+    },
+    {
+      "userId": 953,
+      "fiveStarMovies": 144
+    },
+    {
+      "userId": 2895,
+      "fiveStarMovies": 144
+    },
+    {
+      "userId": 3704,
+      "fiveStarMovies": 144
+    },
+    {
+      "userId": 4979,
+      "fiveStarMovies": 144
+    },
+    {
+      "userId": 148,
+      "fiveStarMovies": 143
+    },
+    {
+      "userId": 957,
+      "fiveStarMovies": 143
+    },
+    {
+      "userId": 1322,
+      "fiveStarMovies": 143
+    },
+    {
+      "userId": 3285,
+      "fiveStarMovies": 143
+    },
+    {
+      "userId": 3853,
+      "fiveStarMovies": 143
+    },
+    {
+      "userId": 4482,
+      "fiveStarMovies": 143
+    },
+    {
+      "userId": 4497,
+      "fiveStarMovies": 143
+    },
+    {
+      "userId": 752,
+      "fiveStarMovies": 142
+    },
+    {
+      "userId": 4227,
+      "fiveStarMovies": 142
+    },
+    {
+      "userId": 5645,
+      "fiveStarMovies": 142
+    },
+    {
+      "userId": 588,
+      "fiveStarMovies": 141
+    },
+    {
+      "userId": 272,
+      "fiveStarMovies": 140
+    },
+    {
+      "userId": 1733,
+      "fiveStarMovies": 139
+    },
+    {
+      "userId": 4484,
+      "fiveStarMovies": 139
+    },
+    {
+      "userId": 4784,
+      "fiveStarMovies": 139
+    },
+    {
+      "userId": 5684,
+      "fiveStarMovies": 139
+    },
+    {
+      "userId": 307,
+      "fiveStarMovies": 138
+    },
+    {
+      "userId": 1697,
+      "fiveStarMovies": 138
+    },
+    {
+      "userId": 5862,
+      "fiveStarMovies": 138
+    },
+    {
+      "userId": 5888,
+      "fiveStarMovies": 138
+    },
+    {
+      "userId": 2116,
+      "fiveStarMovies": 137
+    },
+    {
+      "userId": 2860,
+      "fiveStarMovies": 137
+    },
+    {
+      "userId": 3878,
+      "fiveStarMovies": 137
+    },
+    {
+      "userId": 4506,
+      "fiveStarMovies": 137
+    },
+    {
+      "userId": 2928,
+      "fiveStarMovies": 136
+    },
+    {
+      "userId": 3425,
+      "fiveStarMovies": 136
+    },
+    {
+      "userId": 4607,
+      "fiveStarMovies": 136
+    },
+    {
+      "userId": 5475,
+      "fiveStarMovies": 136
+    },
+    {
+      "userId": 673,
+      "fiveStarMovies": 135
+    },
+    {
+      "userId": 2018,
+      "fiveStarMovies": 135
+    },
+    {
+      "userId": 3081,
+      "fiveStarMovies": 135
+    },
+    {
+      "userId": 3469,
+      "fiveStarMovies": 135
+    },
+    {
+      "userId": 3729,
+      "fiveStarMovies": 135
+    },
+    {
+      "userId": 4298,
+      "fiveStarMovies": 135
+    },
+    {
+      "userId": 2259,
+      "fiveStarMovies": 134
+    },
+    {
+      "userId": 3483,
+      "fiveStarMovies": 134
+    },
+    {
+      "userId": 817,
+      "fiveStarMovies": 133
+    },
+    {
+      "userId": 1141,
+      "fiveStarMovies": 133
+    },
+    {
+      "userId": 1613,
+      "fiveStarMovies": 133
+    },
+    {
+      "userId": 2153,
+      "fiveStarMovies": 133
+    },
+    {
+      "userId": 2683,
+      "fiveStarMovies": 133
+    },
+    {
+      "userId": 669,
+      "fiveStarMovies": 132
+    },
+    {
+      "userId": 2731,
+      "fiveStarMovies": 132
+    },
+    {
+      "userId": 3526,
+      "fiveStarMovies": 132
+    },
+    {
+      "userId": 4342,
+      "fiveStarMovies": 132
+    },
+    {
+      "userId": 5163,
+      "fiveStarMovies": 132
+    },
+    {
+      "userId": 5749,
+      "fiveStarMovies": 132
+    },
+    {
+      "userId": 840,
+      "fiveStarMovies": 131
+    },
+    {
+      "userId": 3300,
+      "fiveStarMovies": 131
+    },
+    {
+      "userId": 4115,
+      "fiveStarMovies": 131
+    },
+    {
+      "userId": 5387,
+      "fiveStarMovies": 131
+    },
+    {
+      "userId": 36,
+      "fiveStarMovies": 130
+    },
+    {
+      "userId": 346,
+      "fiveStarMovies": 130
+    },
+    {
+      "userId": 1203,
+      "fiveStarMovies": 130
+    },
+    {
+      "userId": 6002,
+      "fiveStarMovies": 130
+    },
+    {
+      "userId": 301,
+      "fiveStarMovies": 129
+    },
+    {
+      "userId": 1758,
+      "fiveStarMovies": 129
+    },
+    {
+      "userId": 1884,
+      "fiveStarMovies": 129
+    },
+    {
+      "userId": 3356,
+      "fiveStarMovies": 129
+    },
+    {
+      "userId": 4470,
+      "fiveStarMovies": 129
+    },
+    {
+      "userId": 4578,
+      "fiveStarMovies": 129
+    },
+    {
+      "userId": 4815,
+      "fiveStarMovies": 129
+    },
+    {
+      "userId": 442,
+      "fiveStarMovies": 128
+    },
+    {
+      "userId": 518,
+      "fiveStarMovies": 128
+    },
+    {
+      "userId": 1837,
+      "fiveStarMovies": 128
+    },
+    {
+      "userId": 2764,
+      "fiveStarMovies": 128
+    },
+    {
+      "userId": 3031,
+      "fiveStarMovies": 128
+    },
+    {
+      "userId": 3491,
+      "fiveStarMovies": 128
+    },
+    {
+      "userId": 3940,
+      "fiveStarMovies": 128
+    },
+    {
+      "userId": 5300,
+      "fiveStarMovies": 128
+    },
+    {
+      "userId": 2777,
+      "fiveStarMovies": 127
+    },
+    {
+      "userId": 2776,
+      "fiveStarMovies": 126
+    },
+    {
+      "userId": 3715,
+      "fiveStarMovies": 126
+    },
+    {
+      "userId": 5580,
+      "fiveStarMovies": 126
+    },
+    {
+      "userId": 476,
+      "fiveStarMovies": 125
+    },
+    {
+      "userId": 949,
+      "fiveStarMovies": 125
+    },
+    {
+      "userId": 2056,
+      "fiveStarMovies": 125
+    },
+    {
+      "userId": 5359,
+      "fiveStarMovies": 125
+    },
+    {
+      "userId": 5837,
+      "fiveStarMovies": 125
+    },
+    {
+      "userId": 5847,
+      "fiveStarMovies": 125
+    },
+    {
+      "userId": 175,
+      "fiveStarMovies": 124
+    },
+    {
+      "userId": 1274,
+      "fiveStarMovies": 124
+    },
+    {
+      "userId": 4507,
+      "fiveStarMovies": 124
+    },
+    {
+      "userId": 4579,
+      "fiveStarMovies": 124
+    },
+    {
+      "userId": 4958,
+      "fiveStarMovies": 124
+    },
+    {
+      "userId": 5085,
+      "fiveStarMovies": 124
+    },
+    {
+      "userId": 5550,
+      "fiveStarMovies": 124
+    },
+    {
+      "userId": 146,
+      "fiveStarMovies": 123
+    },
+    {
+      "userId": 1611,
+      "fiveStarMovies": 123
+    },
+    {
+      "userId": 4889,
+      "fiveStarMovies": 123
+    },
+    {
+      "userId": 5568,
+      "fiveStarMovies": 123
+    },
+    {
+      "userId": 5675,
+      "fiveStarMovies": 123
+    },
+    {
+      "userId": 692,
+      "fiveStarMovies": 122
+    },
+    {
+      "userId": 2232,
+      "fiveStarMovies": 122
+    },
+    {
+      "userId": 2900,
+      "fiveStarMovies": 122
+    },
+    {
+      "userId": 3371,
+      "fiveStarMovies": 122
+    },
+    {
+      "userId": 5371,
+      "fiveStarMovies": 122
+    },
+    {
+      "userId": 2446,
+      "fiveStarMovies": 121
+    },
+    {
+      "userId": 3259,
+      "fiveStarMovies": 121
+    },
+    {
+      "userId": 4041,
+      "fiveStarMovies": 121
+    },
+    {
+      "userId": 4079,
+      "fiveStarMovies": 121
+    },
+    {
+      "userId": 4352,
+      "fiveStarMovies": 121
+    },
+    {
+      "userId": 1124,
+      "fiveStarMovies": 120
+    },
+    {
+      "userId": 1628,
+      "fiveStarMovies": 120
+    },
+    {
+      "userId": 1727,
+      "fiveStarMovies": 120
+    },
+    {
+      "userId": 2185,
+      "fiveStarMovies": 120
+    },
+    {
+      "userId": 3641,
+      "fiveStarMovies": 120
+    },
+    {
+      "userId": 4064,
+      "fiveStarMovies": 120
+    },
+    {
+      "userId": 5722,
+      "fiveStarMovies": 120
+    },
+    {
+      "userId": 5759,
+      "fiveStarMovies": 120
+    },
+    {
+      "userId": 3864,
+      "fiveStarMovies": 119
+    },
+    {
+      "userId": 4373,
+      "fiveStarMovies": 119
+    },
+    {
+      "userId": 5273,
+      "fiveStarMovies": 119
+    },
+    {
+      "userId": 1268,
+      "fiveStarMovies": 118
+    },
+    {
+      "userId": 2145,
+      "fiveStarMovies": 118
+    },
+    {
+      "userId": 3746,
+      "fiveStarMovies": 118
+    },
+    {
+      "userId": 4207,
+      "fiveStarMovies": 118
+    },
+    {
+      "userId": 5077,
+      "fiveStarMovies": 118
+    },
+    {
+      "userId": 5364,
+      "fiveStarMovies": 118
+    },
+    {
+      "userId": 5493,
+      "fiveStarMovies": 118
+    },
+    {
+      "userId": 1369,
+      "fiveStarMovies": 117
+    },
+    {
+      "userId": 3414,
+      "fiveStarMovies": 117
+    },
+    {
+      "userId": 3716,
+      "fiveStarMovies": 117
+    },
+    {
+      "userId": 3945,
+      "fiveStarMovies": 117
+    },
+    {
+      "userId": 451,
+      "fiveStarMovies": 116
+    },
+    {
+      "userId": 4140,
+      "fiveStarMovies": 116
+    },
+    {
+      "userId": 4884,
+      "fiveStarMovies": 116
+    },
+    {
+      "userId": 5184,
+      "fiveStarMovies": 116
+    },
+    {
+      "userId": 5517,
+      "fiveStarMovies": 116
+    },
+    {
+      "userId": 187,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 372,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 1643,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 1692,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 1752,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 1916,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 3380,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 3808,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 4285,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 4867,
+      "fiveStarMovies": 115
+    },
+    {
+      "userId": 1465,
+      "fiveStarMovies": 114
+    },
+    {
+      "userId": 3167,
+      "fiveStarMovies": 114
+    },
+    {
+      "userId": 3420,
+      "fiveStarMovies": 114
+    },
+    {
+      "userId": 3685,
+      "fiveStarMovies": 114
+    },
+    {
+      "userId": 3957,
+      "fiveStarMovies": 114
+    },
+    {
+      "userId": 5289,
+      "fiveStarMovies": 114
+    },
+    {
+      "userId": 1087,
+      "fiveStarMovies": 113
+    },
+    {
+      "userId": 1221,
+      "fiveStarMovies": 113
+    },
+    {
+      "userId": 1757,
+      "fiveStarMovies": 113
+    },
+    {
+      "userId": 2304,
+      "fiveStarMovies": 113
+    },
+    {
+      "userId": 4204,
+      "fiveStarMovies": 113
+    },
+    {
+      "userId": 4508,
+      "fiveStarMovies": 113
+    },
+    {
+      "userId": 1753,
+      "fiveStarMovies": 112
+    },
+    {
+      "userId": 2641,
+      "fiveStarMovies": 112
+    },
+    {
+      "userId": 3557,
+      "fiveStarMovies": 112
+    },
+    {
+      "userId": 3836,
+      "fiveStarMovies": 112
+    },
+    {
+      "userId": 4337,
+      "fiveStarMovies": 112
+    },
+    {
+      "userId": 5428,
+      "fiveStarMovies": 112
+    },
+    {
+      "userId": 5630,
+      "fiveStarMovies": 112
+    },
+    {
+      "userId": 300,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 482,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 1712,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 2611,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 3474,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 4058,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 4083,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 4167,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 4543,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 5762,
+      "fiveStarMovies": 111
+    },
+    {
+      "userId": 678,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 1069,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 1899,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 2231,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 2237,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 2781,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 4054,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 4089,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 5605,
+      "fiveStarMovies": 110
+    },
+    {
+      "userId": 928,
+      "fiveStarMovies": 109
+    },
+    {
+      "userId": 3044,
+      "fiveStarMovies": 109
+    },
+    {
+      "userId": 637,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 1088,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 1244,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 1303,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 1354,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 2279,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 2665,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 3299,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 3499,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 5056,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 5576,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 5845,
+      "fiveStarMovies": 108
+    },
+    {
+      "userId": 2064,
+      "fiveStarMovies": 107
+    },
+    {
+      "userId": 4457,
+      "fiveStarMovies": 107
+    },
+    {
+      "userId": 5412,
+      "fiveStarMovies": 107
+    },
+    {
+      "userId": 5664,
+      "fiveStarMovies": 107
+    },
+    {
+      "userId": 366,
+      "fiveStarMovies": 106
+    },
+    {
+      "userId": 1077,
+      "fiveStarMovies": 106
+    },
+    {
+      "userId": 2077,
+      "fiveStarMovies": 106
+    },
+    {
+      "userId": 2990,
+      "fiveStarMovies": 106
+    },
+    {
+      "userId": 4363,
+      "fiveStarMovies": 106
+    },
+    {
+      "userId": 4406,
+      "fiveStarMovies": 106
+    },
+    {
+      "userId": 18,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 438,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 533,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 577,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 764,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 2878,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 2929,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 3054,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 3227,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 3518,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 4831,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 5880,
+      "fiveStarMovies": 105
+    },
+    {
+      "userId": 343,
+      "fiveStarMovies": 104
+    },
+    {
+      "userId": 1897,
+      "fiveStarMovies": 104
+    },
+    {
+      "userId": 2624,
+      "fiveStarMovies": 104
+    },
+    {
+      "userId": 5142,
+      "fiveStarMovies": 104
+    },
+    {
+      "userId": 5268,
+      "fiveStarMovies": 104
+    },
+    {
+      "userId": 5679,
+      "fiveStarMovies": 104
+    },
+    {
+      "userId": 6003,
+      "fiveStarMovies": 104
+    },
+    {
+      "userId": 520,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 911,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 1062,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 1264,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 2023,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 2592,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 3412,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 4094,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 5255,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 5349,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 5744,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 5794,
+      "fiveStarMovies": 103
+    },
+    {
+      "userId": 791,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 1266,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 1856,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 2465,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 2526,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 3151,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 3210,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 4510,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 5434,
+      "fiveStarMovies": 102
+    },
+    {
+      "userId": 151,
+      "fiveStarMovies": 101
+    },
+    {
+      "userId": 408,
+      "fiveStarMovies": 101
+    },
+    {
+      "userId": 1021,
+      "fiveStarMovies": 101
+    },
+    {
+      "userId": 2414,
+      "fiveStarMovies": 101
+    },
+    {
+      "userId": 3118,
+      "fiveStarMovies": 101
+    },
+    {
+      "userId": 3314,
+      "fiveStarMovies": 101
+    },
+    {
+      "userId": 3402,
+      "fiveStarMovies": 101
+    },
+    {
+      "userId": 3757,
+      "fiveStarMovies": 101
+    },
+    {
+      "userId": 1383,
+      "fiveStarMovies": 100
+    },
+    {
+      "userId": 2609,
+      "fiveStarMovies": 100
+    },
+    {
+      "userId": 2899,
+      "fiveStarMovies": 100
+    },
+    {
+      "userId": 3807,
+      "fiveStarMovies": 100
+    },
+    {
+      "userId": 4318,
+      "fiveStarMovies": 100
+    },
+    {
+      "userId": 5582,
+      "fiveStarMovies": 100
+    },
+    {
+      "userId": 5733,
+      "fiveStarMovies": 100
+    },
+    {
+      "userId": 594,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 1202,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 2041,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 2271,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 2368,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 3001,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 3182,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 3217,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 3626,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 3683,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 4179,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 4637,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 5600,
+      "fiveStarMovies": 99
+    },
+    {
+      "userId": 271,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 1437,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 1457,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 2011,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 2887,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 3724,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 4224,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 4626,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 4708,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 5787,
+      "fiveStarMovies": 98
+    },
+    {
+      "userId": 166,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 1071,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 1241,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 1284,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 1687,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 1755,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 2750,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 3562,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 3675,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 3816,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 4213,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 4312,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 4774,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 5978,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 6036,
+      "fiveStarMovies": 97
+    },
+    {
+      "userId": 1186,
+      "fiveStarMovies": 96
+    },
+    {
+      "userId": 2913,
+      "fiveStarMovies": 96
+    },
+    {
+      "userId": 3087,
+      "fiveStarMovies": 96
+    },
+    {
+      "userId": 3416,
+      "fiveStarMovies": 96
+    },
+    {
+      "userId": 5689,
+      "fiveStarMovies": 96
+    },
+    {
+      "userId": 5755,
+      "fiveStarMovies": 96
+    },
+    {
+      "userId": 5831,
+      "fiveStarMovies": 96
+    },
+    {
+      "userId": 798,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 850,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 2544,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 2608,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 3596,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 3658,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 3900,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 4932,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 5008,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 5890,
+      "fiveStarMovies": 95
+    },
+    {
+      "userId": 1040,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 1134,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 1140,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 1297,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 1647,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 2901,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 4310,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 4940,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 4981,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 5634,
+      "fiveStarMovies": 94
+    },
+    {
+      "userId": 929,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 1101,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 3521,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 3588,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 4771,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 5070,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 5305,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 5466,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 5585,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 5643,
+      "fiveStarMovies": 93
+    },
+    {
+      "userId": 889,
+      "fiveStarMovies": 92
+    },
+    {
+      "userId": 2786,
+      "fiveStarMovies": 92
+    },
+    {
+      "userId": 3423,
+      "fiveStarMovies": 92
+    },
+    {
+      "userId": 4659,
+      "fiveStarMovies": 92
+    },
+    {
+      "userId": 4765,
+      "fiveStarMovies": 92
+    },
+    {
+      "userId": 5626,
+      "fiveStarMovies": 92
+    },
+    {
+      "userId": 198,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 494,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 1017,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 1130,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 1639,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 3756,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 4001,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 4250,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 4418,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 5250,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 5256,
+      "fiveStarMovies": 91
+    },
+    {
+      "userId": 631,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 1317,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 1395,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 1722,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 1806,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 2679,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 4388,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 5333,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 5851,
+      "fiveStarMovies": 90
+    },
+    {
+      "userId": 922,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 1151,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 1172,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 1797,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 2242,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 2376,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 2453,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 2756,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 3301,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 4387,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 5539,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 5557,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 5717,
+      "fiveStarMovies": 89
+    },
+    {
+      "userId": 139,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 453,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 858,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 1125,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 2303,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 2593,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 3140,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 3770,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 4258,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 4322,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 4381,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 4750,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 5011,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 5220,
+      "fiveStarMovies": 88
+    },
+    {
+      "userId": 890,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 1246,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 1524,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 1879,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 2872,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 3393,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 4490,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 4634,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 4675,
+      "fiveStarMovies": 87
+    },
+    {
+      "userId": 651,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 696,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 881,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 1019,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 1271,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 1694,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 1802,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 2849,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 2967,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 3101,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 3129,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 3394,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 3624,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 3751,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 4375,
+      "fiveStarMovies": 86
+    },
+    {
+      "userId": 130,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 1132,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 1170,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 1299,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 1737,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 1820,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 3400,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 3611,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 3850,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 3965,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 3976,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 4050,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 4384,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 4933,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 5337,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 5345,
+      "fiveStarMovies": 85
+    },
+    {
+      "userId": 169,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 202,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 531,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 802,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 846,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 1546,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 1800,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 2038,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 2774,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 3108,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 4032,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 4921,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 5102,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 5367,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 5458,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 5623,
+      "fiveStarMovies": 84
+    },
+    {
+      "userId": 97,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 1113,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 1131,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 1255,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 1273,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 1584,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 1958,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 2016,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 2176,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 2854,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 4084,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 4461,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 4948,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 5001,
+      "fiveStarMovies": 83
+    },
+    {
+      "userId": 284,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 454,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 624,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 635,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 1552,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 2288,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 2436,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 2810,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 3475,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 3651,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 3997,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 3999,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 4088,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 4535,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 4715,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 4786,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 5323,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 5636,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 5806,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 5917,
+      "fiveStarMovies": 82
+    },
+    {
+      "userId": 314,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 800,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 1356,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 1624,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 1709,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 1960,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 2072,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 2565,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 2753,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 2966,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 3266,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 3418,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 4112,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 5091,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 6010,
+      "fiveStarMovies": 81
+    },
+    {
+      "userId": 101,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 216,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 937,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 1001,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 2059,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 2211,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 2743,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 2952,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 3128,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 3501,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 3858,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 5083,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 5512,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 5593,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 5972,
+      "fiveStarMovies": 80
+    },
+    {
+      "userId": 293,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 528,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 677,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 1298,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 1390,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 1896,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 2020,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 2148,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 2178,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 2824,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 2944,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 3158,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 5596,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 5788,
+      "fiveStarMovies": 79
+    },
+    {
+      "userId": 302,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 1587,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 1675,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 1974,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 3560,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 3669,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 3989,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 4117,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 4531,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 5530,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 5848,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 5858,
+      "fiveStarMovies": 78
+    },
+    {
+      "userId": 225,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 368,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 877,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 1216,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 2175,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 2916,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 3271,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 4093,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 4303,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 4645,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 4852,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 4946,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 5306,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 5413,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 5621,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 5758,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 6011,
+      "fiveStarMovies": 77
+    },
+    {
+      "userId": 303,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 744,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 1086,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 1147,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 1532,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 1805,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 2165,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 2918,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 2942,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 3002,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 3600,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 3705,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 3713,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 3735,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 4333,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 4374,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 5433,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 5718,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 6040,
+      "fiveStarMovies": 76
+    },
+    {
+      "userId": 411,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 429,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 1301,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 1516,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 2497,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 2629,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 2737,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 3025,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 3065,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 3192,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 3679,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 4808,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 5053,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 5271,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 5446,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 5468,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 5523,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 5886,
+      "fiveStarMovies": 75
+    },
+    {
+      "userId": 536,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 919,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 1420,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 1501,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 1701,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 2247,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 2251,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 2307,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 2814,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 2931,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3272,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3304,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3428,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3454,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3462,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3540,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3635,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3684,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 3760,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 4016,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 4268,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 4416,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 4521,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 4589,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 4937,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 5430,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 5667,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 5767,
+      "fiveStarMovies": 74
+    },
+    {
+      "userId": 452,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 1294,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 1778,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 2008,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 2676,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 2820,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 3403,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 3621,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 3697,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 4118,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 4505,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 4705,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 4861,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 4898,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 5352,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 5543,
+      "fiveStarMovies": 73
+    },
+    {
+      "userId": 204,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 474,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 623,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 891,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 1182,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 1413,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 1530,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 1601,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 2700,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 2748,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 2825,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 2885,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 3013,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 3125,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 3205,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 3312,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 3341,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 3401,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 3648,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 4217,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 4315,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 4680,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 5082,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 5501,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 5570,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 5747,
+      "fiveStarMovies": 72
+    },
+    {
+      "userId": 33,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 117,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 205,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 261,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 403,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 1426,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 1988,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 2024,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 2050,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 2085,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 2125,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 2995,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 3390,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 3695,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 3844,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 3892,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 3930,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 4279,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 4879,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 4959,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 5447,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 5482,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 5770,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 5809,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 5981,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 5995,
+      "fiveStarMovies": 71
+    },
+    {
+      "userId": 338,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 392,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 475,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 690,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 822,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 1121,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 1325,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 1407,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 1696,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 2096,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 2484,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 2634,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 3045,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 3074,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 3082,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 3833,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 3929,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 4215,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 4269,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 4476,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 5054,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 5166,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 5167,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 5459,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 5555,
+      "fiveStarMovies": 70
+    },
+    {
+      "userId": 17,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 698,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 710,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 1606,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 1925,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 3036,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 3203,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 3260,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 3473,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 4480,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 4956,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 4994,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 5047,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 5483,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 5545,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 5597,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 5706,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 5874,
+      "fiveStarMovies": 69
+    },
+    {
+      "userId": 278,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 499,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 509,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 955,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 1470,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 1505,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 1863,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 2222,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 3815,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 3946,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 3978,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 4085,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 4287,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 4291,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 4345,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 4591,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 4779,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 5397,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 5671,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 5852,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 5908,
+      "fiveStarMovies": 68
+    },
+    {
+      "userId": 62,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 319,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 336,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 838,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 1631,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 2195,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 2438,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 2784,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 3231,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 3283,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 3320,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 3353,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 3718,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 3768,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 3961,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 4265,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 4950,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 4964,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 5131,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 5319,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 5915,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 5942,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 6016,
+      "fiveStarMovies": 67
+    },
+    {
+      "userId": 699,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 1228,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 1693,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 2162,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 3261,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 3790,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 4887,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 5099,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 5165,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 5234,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 5278,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 5369,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 5404,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 5805,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 5986,
+      "fiveStarMovies": 66
+    },
+    {
+      "userId": 136,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 223,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 230,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 274,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 687,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 702,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 970,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 977,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 996,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 1230,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 1232,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 1329,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 2063,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 2943,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 3086,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 3095,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 3169,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 3789,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 3825,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 3829,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 4005,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 4194,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 4328,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 4734,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 5327,
+      "fiveStarMovies": 65
+    },
+    {
+      "userId": 157,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 210,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 558,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 590,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 602,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 824,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 1119,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 1260,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 1291,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 1599,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 1706,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 1996,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 1998,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 2021,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 2070,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 2974,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 3096,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 3226,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 3410,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 3436,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 3490,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 3513,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 3717,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 4139,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 4728,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 5065,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 5260,
+      "fiveStarMovies": 64
+    },
+    {
+      "userId": 75,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 181,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 192,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 285,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 496,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 583,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 721,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 1345,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 1446,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 1853,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 2173,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 2186,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 2747,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 2761,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 3519,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 3572,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 3591,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 4456,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 4754,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 5096,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 5573,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 5629,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 5779,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 5938,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 6013,
+      "fiveStarMovies": 63
+    },
+    {
+      "userId": 295,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 765,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 1194,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 1597,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 1903,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 1952,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 2282,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 2540,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 2643,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 2788,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 3277,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 3547,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 3622,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 3673,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 4177,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 4422,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 4957,
+      "fiveStarMovies": 62
+    },
+    {
+      "userId": 65,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 238,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 409,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 426,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 829,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 1219,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 1340,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 1685,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 2180,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 2219,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 2868,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 3280,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 3509,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 3761,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 3912,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 4156,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 4286,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 4523,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 4882,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 5246,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 5269,
+      "fiveStarMovies": 61
+    },
+    {
+      "userId": 727,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 1058,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 1449,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 1569,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 1579,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 1695,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 1865,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 1939,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 2054,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 2055,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 2659,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 2818,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 3328,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 3426,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 3512,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 3561,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 3605,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 3691,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 3970,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 3998,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 4072,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 4090,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 4122,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 5108,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 5114,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 5524,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 5680,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 5734,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 5811,
+      "fiveStarMovies": 60
+    },
+    {
+      "userId": 732,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 864,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 1150,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 1396,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 1894,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 2225,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 2323,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 2506,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 2572,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 2809,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 3110,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 3229,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 3230,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 3327,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 3693,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 3804,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 4009,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 4697,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 4823,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 5038,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 5574,
+      "fiveStarMovies": 59
+    },
+    {
+      "userId": 81,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 150,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 461,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 682,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 1010,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 1099,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 1139,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 1272,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 1920,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 2170,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 2689,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 2726,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 2752,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 3243,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 3315,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 3827,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 3884,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 3988,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 4077,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 4114,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 4131,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 4351,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 4687,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 4737,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 5286,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 5716,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 5838,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 5952,
+      "fiveStarMovies": 58
+    },
+    {
+      "userId": 385,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 739,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 1164,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 1793,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 2002,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 2091,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 2171,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 2504,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 3038,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 3135,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 3585,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 3709,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 3796,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 3889,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 3891,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 4794,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 4899,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 4906,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 4951,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 5390,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 5394,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 5452,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 5516,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 5567,
+      "fiveStarMovies": 57
+    },
+    {
+      "userId": 231,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 390,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 931,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 1315,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 1880,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 2109,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 2859,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 3026,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 3093,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 3228,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 3994,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 4327,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 4336,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 4356,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 4509,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 4611,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 4656,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5041,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5061,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5161,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5205,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5283,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5401,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5542,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5565,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5792,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 5949,
+      "fiveStarMovies": 56
+    },
+    {
+      "userId": 19,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 156,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 664,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 1038,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 1223,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 1551,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 1561,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 1870,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 1901,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 2029,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 2090,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 2163,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 2628,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 2738,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 2832,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 3281,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 3610,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 3653,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 3874,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 3979,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 4203,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 4271,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 4568,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 4592,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 4785,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5044,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5107,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5137,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5180,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5208,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5448,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5491,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5658,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5691,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 5861,
+      "fiveStarMovies": 55
+    },
+    {
+      "userId": 186,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 275,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 466,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 517,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 529,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 646,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 712,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 1073,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 1361,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 1484,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 1796,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 1807,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 2118,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 2164,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 2389,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 2472,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 2790,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 2938,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 3159,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 3233,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 3305,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 3458,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 3487,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 3677,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 3754,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 4078,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 4502,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 4585,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 4809,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 5048,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 5158,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 5418,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 5441,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 5785,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 5881,
+      "fiveStarMovies": 54
+    },
+    {
+      "userId": 398,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 661,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 671,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 987,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 1018,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 1176,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 1421,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 1600,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 1759,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 1928,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 2022,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 2100,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 2155,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 2276,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 2398,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 2547,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 2852,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 3154,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 3207,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 3413,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 3464,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 3498,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 3682,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4152,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4361,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4401,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4404,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4491,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4518,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4658,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4666,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4686,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4745,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 4796,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 5178,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 5257,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 5365,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 5376,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 5768,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 5854,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 5911,
+      "fiveStarMovies": 53
+    },
+    {
+      "userId": 34,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 735,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 754,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 778,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 781,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 984,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 1181,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 1183,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 1191,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 1265,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 1347,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 1632,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 1702,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 1724,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 2098,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 2246,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 2457,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 2485,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 2523,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 2694,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 3242,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 3511,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 3607,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 3726,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 3799,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 3910,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 4034,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 4126,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 4195,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 4447,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 4452,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 4560,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5427,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5429,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5463,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5698,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5705,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5757,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5826,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5925,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 5963,
+      "fiveStarMovies": 52
+    },
+    {
+      "userId": 183,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 199,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 270,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 386,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 413,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 605,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 630,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 899,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 985,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 1105,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 1466,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 1490,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 1542,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 1626,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 1683,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 1767,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 1972,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 2458,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 2903,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 3471,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 3546,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 3601,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 3665,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 3830,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 3887,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 4302,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 4511,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 4556,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 4655,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 4868,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 5021,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 5653,
+      "fiveStarMovies": 51
+    },
+    {
+      "userId": 5871,
+      "fiveStarMovies": 51
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

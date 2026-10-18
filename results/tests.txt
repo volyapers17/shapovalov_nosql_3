@@ -1,0 +1,10 @@
+test_bad_rating_rejected (test_convert.ConversionTests.test_bad_rating_rejected) ... ok
+test_duplicate_rating_rejected (test_convert.ConversionTests.test_duplicate_rating_rejected) ... ok
+test_latin1_quoting_year_and_age_code (test_convert.ConversionTests.test_latin1_quoting_year_and_age_code) ... ok
+test_missing_year_rejected (test_convert.ConversionTests.test_missing_year_rejected) ... ok
+test_orphan_rejected (test_convert.ConversionTests.test_orphan_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.012s
+
+OK

@@ -1,0 +1,23 @@
+{
+  "executed_at_utc": "2026-10-18T14:36:26.709517+00:00",
+  "seconds": 1.0134,
+  "query": "CREATE CONSTRAINT user_id IF NOT EXISTS FOR (u:User) REQUIRE u.userId IS UNIQUE",
+  "columns": [],
+  "rows": [],
+  "stats": {
+    "contains_updates": true,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 1,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

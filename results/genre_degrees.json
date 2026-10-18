@@ -1,0 +1,99 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:13.547809+00:00",
+  "seconds": 0.1154,
+  "query": "MATCH (g:Genre)\nRETURN g.name AS genre,COUNT { (g)<-[:HAS_GENRE]-() } AS degree\nORDER BY degree DESC,genre",
+  "columns": [
+    "genre",
+    "degree"
+  ],
+  "rows": [
+    {
+      "genre": "Drama",
+      "degree": 1603
+    },
+    {
+      "genre": "Comedy",
+      "degree": 1200
+    },
+    {
+      "genre": "Action",
+      "degree": 503
+    },
+    {
+      "genre": "Thriller",
+      "degree": 492
+    },
+    {
+      "genre": "Romance",
+      "degree": 471
+    },
+    {
+      "genre": "Horror",
+      "degree": 343
+    },
+    {
+      "genre": "Adventure",
+      "degree": 283
+    },
+    {
+      "genre": "Sci-Fi",
+      "degree": 276
+    },
+    {
+      "genre": "Children's",
+      "degree": 251
+    },
+    {
+      "genre": "Crime",
+      "degree": 211
+    },
+    {
+      "genre": "War",
+      "degree": 143
+    },
+    {
+      "genre": "Documentary",
+      "degree": 127
+    },
+    {
+      "genre": "Musical",
+      "degree": 114
+    },
+    {
+      "genre": "Mystery",
+      "degree": 106
+    },
+    {
+      "genre": "Animation",
+      "degree": 105
+    },
+    {
+      "genre": "Fantasy",
+      "degree": 68
+    },
+    {
+      "genre": "Western",
+      "degree": 68
+    },
+    {
+      "genre": "Film-Noir",
+      "degree": 44
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

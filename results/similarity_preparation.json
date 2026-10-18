@@ -1,0 +1,18 @@
+{
+  "method": "exact sparse int64 products",
+  "high_rating_threshold": 4,
+  "top_edges": 50000,
+  "numpy": "2.3.2",
+  "co_rated": {
+    "positive_candidate_pairs": 3481384,
+    "selected_pairs": 50000,
+    "min_weight": 157,
+    "max_weight": 1960
+  },
+  "similar": {
+    "positive_candidate_pairs": 16205371,
+    "selected_pairs": 50000,
+    "min_weight": 117,
+    "max_weight": 734
+  }
+}

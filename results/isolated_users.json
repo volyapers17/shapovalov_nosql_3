@@ -1,0 +1,31 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:39.094904+00:00",
+  "seconds": 0.2164,
+  "query": "MATCH (u:User)\nRETURN count(*) AS users,\n sum(CASE WHEN COUNT { (u)-[:SIMILAR]-() }=0 THEN 1 ELSE 0 END) AS isolated",
+  "columns": [
+    "users",
+    "isolated"
+  ],
+  "rows": [
+    {
+      "users": 6040,
+      "isolated": 4823
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

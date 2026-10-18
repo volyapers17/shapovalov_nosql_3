@@ -1,0 +1,100 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:11.819857+00:00",
+  "seconds": 2.4658,
+  "query": "// Схожість = кількість спільних оцінок >=4; мінімум 3, top-50 сусідів.\nMATCH (target:User {userId:1})-[a:RATED]->(:Movie)<-[b:RATED]-(other:User)\nWHERE a.rating >= 4 AND b.rating >= 4 AND other <> target\nWITH target,other,count(*) AS sharedLikes\nWHERE sharedLikes >= 3\nWITH target,other,sharedLikes\nORDER BY sharedLikes DESC,other.userId\nLIMIT 50\nMATCH (other)-[r:RATED]->(candidate:Movie)\nWHERE r.rating >= 4 AND NOT EXISTS { MATCH (target)-[:RATED]->(candidate) }\nWITH candidate,count(DISTINCT other) AS supporters,\n     sum(sharedLikes) AS score,\n     sum(toFloat(sharedLikes)*r.rating)/sum(sharedLikes) AS weightedRating\nWHERE supporters >= 2\nRETURN candidate.movieId AS movieId,candidate.title AS title,score,supporters,weightedRating\nORDER BY score DESC,supporters DESC,weightedRating DESC,movieId\nLIMIT 10",
+  "columns": [
+    "movieId",
+    "title",
+    "score",
+    "supporters",
+    "weightedRating"
+  ],
+  "rows": [
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "score": 1495,
+      "supporters": 47,
+      "weightedRating": 4.724414715719064
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "score": 1462,
+      "supporters": 46,
+      "weightedRating": 4.807797537619699
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (1981)",
+      "score": 1457,
+      "supporters": 46,
+      "weightedRating": 4.7220315717227175
+    },
+    {
+      "movieId": 1307,
+      "title": "When Harry Met Sally... (1989)",
+      "score": 1457,
+      "supporters": 46,
+      "weightedRating": 4.579272477693891
+    },
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "score": 1432,
+      "supporters": 45,
+      "weightedRating": 4.464385474860335
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "score": 1431,
+      "supporters": 45,
+      "weightedRating": 4.689028651292802
+    },
+    {
+      "movieId": 953,
+      "title": "It's a Wonderful Life (1946)",
+      "score": 1410,
+      "supporters": 44,
+      "weightedRating": 4.890780141843972
+    },
+    {
+      "movieId": 1784,
+      "title": "As Good As It Gets (1997)",
+      "score": 1366,
+      "supporters": 43,
+      "weightedRating": 4.394582723279648
+    },
+    {
+      "movieId": 1393,
+      "title": "Jerry Maguire (1996)",
+      "score": 1366,
+      "supporters": 43,
+      "weightedRating": 4.306002928257687
+    },
+    {
+      "movieId": 1291,
+      "title": "Indiana Jones and the Last Crusade (1989)",
+      "score": 1354,
+      "supporters": 43,
+      "weightedRating": 4.4364844903988185
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

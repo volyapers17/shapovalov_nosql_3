@@ -1,0 +1,67 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:13.660156+00:00",
+  "seconds": 0.1116,
+  "query": "MATCH (u:User)\nRETURN u.userId AS userId,COUNT { (u)-[:RATED]->() } AS degree\nORDER BY degree DESC,userId LIMIT 10",
+  "columns": [
+    "userId",
+    "degree"
+  ],
+  "rows": [
+    {
+      "userId": 4169,
+      "degree": 2314
+    },
+    {
+      "userId": 1680,
+      "degree": 1850
+    },
+    {
+      "userId": 4277,
+      "degree": 1743
+    },
+    {
+      "userId": 1941,
+      "degree": 1595
+    },
+    {
+      "userId": 1181,
+      "degree": 1521
+    },
+    {
+      "userId": 889,
+      "degree": 1518
+    },
+    {
+      "userId": 3618,
+      "degree": 1344
+    },
+    {
+      "userId": 2063,
+      "degree": 1323
+    },
+    {
+      "userId": 1150,
+      "degree": 1302
+    },
+    {
+      "userId": 1015,
+      "degree": 1286
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

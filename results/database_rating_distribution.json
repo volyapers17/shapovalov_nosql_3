@@ -1,0 +1,47 @@
+{
+  "executed_at_utc": "2026-10-18T14:57:42.524422+00:00",
+  "seconds": 0.2907,
+  "query": "MATCH ()-[r:RATED]->()\nRETURN r.rating AS rating,count(*) AS count ORDER BY rating",
+  "columns": [
+    "rating",
+    "count"
+  ],
+  "rows": [
+    {
+      "rating": 1,
+      "count": 56174
+    },
+    {
+      "rating": 2,
+      "count": 107557
+    },
+    {
+      "rating": 3,
+      "count": 261197
+    },
+    {
+      "rating": 4,
+      "count": 348971
+    },
+    {
+      "rating": 5,
+      "count": 226310
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

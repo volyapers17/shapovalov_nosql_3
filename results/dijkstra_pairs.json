@@ -1,0 +1,776 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:39.710504+00:00",
+  "seconds": 0.6136,
+  "query": "// Показові пари + 100 відтворюваних різних пар по всьому діапазону ID.\nWITH [[1,2],[4169,1680],[4277,1941],[1181,889]] +\n [i IN range(0,99) | [1+((i*59)%6040),1+((i*97+1000)%6040)]] AS pairs\nUNWIND pairs AS pair\nMATCH (source:User {userId:pair[0]}),(target:User {userId:pair[1]})\nCALL {\n WITH source,target\n CALL gds.shortestPath.dijkstra.stream('userGraph',\n  {sourceNode:source,targetNode:target,relationshipWeightProperty:'distance'})\n YIELD totalCost,nodeIds\n RETURN collect({cost:totalCost,hops:size(nodeIds)-1,\n                 users:[id IN nodeIds | gds.util.asNode(id).userId]}) AS paths\n}\nRETURN source.userId AS source,target.userId AS target,\n CASE WHEN size(paths)=0 THEN null ELSE paths[0].cost END AS cost,\n CASE WHEN size(paths)=0 THEN null ELSE paths[0].hops END AS hops,\n CASE WHEN size(paths)=0 THEN [] ELSE paths[0].users END AS users",
+  "columns": [
+    "source",
+    "target",
+    "cost",
+    "hops",
+    "users"
+  ],
+  "rows": [
+    {
+      "source": 1,
+      "target": 2,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4169,
+      "target": 1680,
+      "cost": 0.00205761316872428,
+      "hops": 1,
+      "users": [
+        4169,
+        1680
+      ]
+    },
+    {
+      "source": 4277,
+      "target": 1941,
+      "cost": 0.002898550724637681,
+      "hops": 1,
+      "users": [
+        4277,
+        1941
+      ]
+    },
+    {
+      "source": 1181,
+      "target": 889,
+      "cost": 0.008727990285367335,
+      "hops": 2,
+      "users": [
+        1181,
+        4277,
+        889
+      ]
+    },
+    {
+      "source": 1,
+      "target": 1001,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 60,
+      "target": 1098,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 119,
+      "target": 1195,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 178,
+      "target": 1292,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 237,
+      "target": 1389,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 296,
+      "target": 1486,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 355,
+      "target": 1583,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 414,
+      "target": 1680,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 473,
+      "target": 1777,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 532,
+      "target": 1874,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 591,
+      "target": 1971,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 650,
+      "target": 2068,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 709,
+      "target": 2165,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 768,
+      "target": 2262,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 827,
+      "target": 2359,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 886,
+      "target": 2456,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 945,
+      "target": 2553,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1004,
+      "target": 2650,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1063,
+      "target": 2747,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1122,
+      "target": 2844,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1181,
+      "target": 2941,
+      "cost": 0.010840809753853231,
+      "hops": 2,
+      "users": [
+        1181,
+        4277,
+        2941
+      ]
+    },
+    {
+      "source": 1240,
+      "target": 3038,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1299,
+      "target": 3135,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1358,
+      "target": 3232,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1417,
+      "target": 3329,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1476,
+      "target": 3426,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1535,
+      "target": 3523,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1594,
+      "target": 3620,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1653,
+      "target": 3717,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1712,
+      "target": 3814,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1771,
+      "target": 3911,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1830,
+      "target": 4008,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1889,
+      "target": 4105,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 1948,
+      "target": 4202,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2007,
+      "target": 4299,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2066,
+      "target": 4396,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2125,
+      "target": 4493,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2184,
+      "target": 4590,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2243,
+      "target": 4687,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2302,
+      "target": 4784,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2361,
+      "target": 4881,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2420,
+      "target": 4978,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2479,
+      "target": 5075,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2538,
+      "target": 5172,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2597,
+      "target": 5269,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2656,
+      "target": 5366,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2715,
+      "target": 5463,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2774,
+      "target": 5560,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2833,
+      "target": 5657,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2892,
+      "target": 5754,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 2951,
+      "target": 5851,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3010,
+      "target": 5948,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3069,
+      "target": 5,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3128,
+      "target": 102,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3187,
+      "target": 199,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3246,
+      "target": 296,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3305,
+      "target": 393,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3364,
+      "target": 490,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3423,
+      "target": 587,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3482,
+      "target": 684,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3541,
+      "target": 781,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3600,
+      "target": 878,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3659,
+      "target": 975,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3718,
+      "target": 1072,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3777,
+      "target": 1169,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3836,
+      "target": 1266,
+      "cost": 0.009109311740890687,
+      "hops": 2,
+      "users": [
+        3836,
+        4277,
+        1266
+      ]
+    },
+    {
+      "source": 3895,
+      "target": 1363,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 3954,
+      "target": 1460,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4013,
+      "target": 1557,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4072,
+      "target": 1654,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4131,
+      "target": 1751,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4190,
+      "target": 1848,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4249,
+      "target": 1945,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4308,
+      "target": 2042,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4367,
+      "target": 2139,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4426,
+      "target": 2236,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4485,
+      "target": 2333,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4544,
+      "target": 2430,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4603,
+      "target": 2527,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4662,
+      "target": 2624,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4721,
+      "target": 2721,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4780,
+      "target": 2818,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4839,
+      "target": 2915,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4898,
+      "target": 3012,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 4957,
+      "target": 3109,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5016,
+      "target": 3206,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5075,
+      "target": 3303,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5134,
+      "target": 3400,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5193,
+      "target": 3497,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5252,
+      "target": 3594,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5311,
+      "target": 3691,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5370,
+      "target": 3788,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5429,
+      "target": 3885,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5488,
+      "target": 3982,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5547,
+      "target": 4079,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5606,
+      "target": 4176,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5665,
+      "target": 4273,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5724,
+      "target": 4370,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5783,
+      "target": 4467,
+      "cost": null,
+      "hops": null,
+      "users": []
+    },
+    {
+      "source": 5842,
+      "target": 4564,
+      "cost": null,
+      "hops": null,
+      "users": []
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

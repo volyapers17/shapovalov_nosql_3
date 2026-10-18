@@ -1,0 +1,35 @@
+{
+  "q1_thrillers": {
+    "all_rows_match_sqlite": true,
+    "rows": 52
+  },
+  "q2_five_star_users": {
+    "all_rows_match_sqlite": true,
+    "rows": 1390
+  },
+  "q3_shared_favourites": {
+    "all_rows_match_sqlite": true,
+    "rows": 6
+  },
+  "q4_genres": {
+    "all_rows_match_sqlite": true,
+    "rows": 18
+  },
+  "q5_recommendations": {
+    "all_rows_match_sqlite": true,
+    "rows": 10
+  },
+  "q6_shortest_path": {
+    "real_shared_movie": true,
+    "minimum_hops": 2,
+    "reason": "Distinct users in a bipartite User-Movie graph cannot be directly adjacent."
+  },
+  "import": {
+    "full_dataset_counts": true,
+    "idempotent": true,
+    "duplicate_pairs": 0
+  },
+  "derived_weights": {
+    "twenty_pairs_verified_in_cypher": true
+  }
+}

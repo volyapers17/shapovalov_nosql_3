@@ -1,0 +1,67 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:31.123019+00:00",
+  "seconds": 0.114,
+  "query": "MATCH (u:User)\nRETURN u.community AS community,count(*) AS users\nORDER BY users DESC,community LIMIT 10",
+  "columns": [
+    "community",
+    "users"
+  ],
+  "rows": [
+    {
+      "community": 4276,
+      "users": 792
+    },
+    {
+      "community": 1736,
+      "users": 235
+    },
+    {
+      "community": 1273,
+      "users": 190
+    },
+    {
+      "community": 0,
+      "users": 1
+    },
+    {
+      "community": 1,
+      "users": 1
+    },
+    {
+      "community": 2,
+      "users": 1
+    },
+    {
+      "community": 3,
+      "users": 1
+    },
+    {
+      "community": 4,
+      "users": 1
+    },
+    {
+      "community": 5,
+      "users": 1
+    },
+    {
+      "community": 6,
+      "users": 1
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

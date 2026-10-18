@@ -1,0 +1,170 @@
+{
+  "executed_at_utc": "2026-10-18T14:57:42.710976+00:00",
+  "seconds": 0.146,
+  "query": "MATCH (a:User)-[s:SIMILAR]->(b:User)\nWITH a,b,s ORDER BY a.userId,b.userId LIMIT 20\nMATCH (a)-[r1:RATED]->(m:Movie)<-[r2:RATED]-(b)\nWHERE r1.rating>=4 AND r2.rating>=4\nWITH a,b,s,count(m) AS expected\nRETURN a.userId AS source,b.userId AS target,s.weight AS actual,expected,s.weight=expected AS correct",
+  "columns": [
+    "source",
+    "target",
+    "actual",
+    "expected",
+    "correct"
+  ],
+  "rows": [
+    {
+      "source": 10,
+      "target": 53,
+      "actual": 122,
+      "expected": 122,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 148,
+      "actual": 128,
+      "expected": 128,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 195,
+      "actual": 122,
+      "expected": 122,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 424,
+      "actual": 192,
+      "expected": 192,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 524,
+      "actual": 119,
+      "expected": 119,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 543,
+      "actual": 131,
+      "expected": 131,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 549,
+      "actual": 163,
+      "expected": 163,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 550,
+      "actual": 136,
+      "expected": 136,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 678,
+      "actual": 181,
+      "expected": 181,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 839,
+      "actual": 147,
+      "expected": 147,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 869,
+      "actual": 150,
+      "expected": 150,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 911,
+      "actual": 124,
+      "expected": 124,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 1015,
+      "actual": 162,
+      "expected": 162,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 1051,
+      "actual": 152,
+      "expected": 152,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 1088,
+      "actual": 154,
+      "expected": 154,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 1117,
+      "actual": 145,
+      "expected": 145,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 1120,
+      "actual": 213,
+      "expected": 213,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 1246,
+      "actual": 122,
+      "expected": 122,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 1285,
+      "actual": 166,
+      "expected": 166,
+      "correct": true
+    },
+    {
+      "source": 10,
+      "target": 1298,
+      "actual": 120,
+      "expected": 120,
+      "correct": true
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:12.272977+00:00",
+  "seconds": 0.4502,
+  "query": "// Лише RATED, без жанрових скорочень. Напрям ігноруємо навмисно.\nMATCH (a:User {userId:1}),(b:User {userId:2})\nMATCH p=shortestPath((a)-[:RATED*]-(b))\nRETURN length(p) AS hops,\n       [n IN nodes(p) | CASE WHEN n:User THEN 'User '+toString(n.userId) ELSE n.title END] AS chain",
+  "columns": [
+    "hops",
+    "chain"
+  ],
+  "rows": [
+    {
+      "hops": 2,
+      "chain": [
+        "User 1",
+        "Awakenings (1990)",
+        "User 2"
+      ]
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

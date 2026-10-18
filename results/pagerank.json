@@ -1,0 +1,89 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:25.783634+00:00",
+  "seconds": 0.6463,
+  "query": "CALL gds.pageRank.stream('movieGraph',\n {relationshipWeightProperty:'weight',maxIterations:100,tolerance:0.000001,concurrency:1})\nYIELD nodeId,score\nWITH gds.util.asNode(nodeId) AS m,score\nRETURN m.movieId AS movieId,m.title AS title,score,\n COUNT { (m)<-[:RATED]-() } AS ratingCount\nORDER BY score DESC,movieId LIMIT 10",
+  "columns": [
+    "movieId",
+    "title",
+    "score",
+    "ratingCount"
+  ],
+  "rows": [
+    {
+      "movieId": 2858,
+      "title": "American Beauty (1999)",
+      "score": 9.972698487815604,
+      "ratingCount": 3428
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "score": 9.431337254562955,
+      "ratingCount": 2991
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "score": 9.389423167159684,
+      "ratingCount": 2990
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (1981)",
+      "score": 8.278139579469013,
+      "ratingCount": 2514
+    },
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "score": 7.291913776813232,
+      "ratingCount": 2513
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "score": 7.023895728369262,
+      "ratingCount": 2578
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "score": 6.574409332698486,
+      "ratingCount": 2223
+    },
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "score": 6.526506709809046,
+      "ratingCount": 2227
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "score": 6.518531953683949,
+      "ratingCount": 2590
+    },
+    {
+      "movieId": 2762,
+      "title": "Sixth Sense, The (1999)",
+      "score": 6.3102834277509405,
+      "ratingCount": 2459
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

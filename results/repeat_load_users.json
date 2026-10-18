@@ -1,0 +1,37 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:43.413135+00:00",
+  "seconds": 0.3275,
+  "query": "CALL apoc.periodic.iterate(\n  \"LOAD CSV WITH HEADERS FROM 'file:///users.csv' AS row RETURN row\",\n  \"MERGE (u:User {userId:toInteger(row.userId)})\n   SET u.gender=row.gender, u.age=toInteger(row.age), u.occupation=toInteger(row.occupation)\",\n  {batchSize:1000, parallel:false}\n) YIELD batches,total,failedBatches,failedOperations,errorMessages\nRETURN batches,total,failedBatches,failedOperations,errorMessages",
+  "columns": [
+    "batches",
+    "total",
+    "failedBatches",
+    "failedOperations",
+    "errorMessages"
+  ],
+  "rows": [
+    {
+      "batches": 7,
+      "total": 6040,
+      "failedBatches": 0,
+      "failedOperations": 0,
+      "errorMessages": {}
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

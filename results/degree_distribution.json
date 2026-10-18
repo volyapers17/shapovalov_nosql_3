@@ -1,0 +1,63 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:12.967025+00:00",
+  "seconds": 0.6172,
+  "query": "MATCH (n)\nWITH labels(n)[0] AS label,COUNT { (n)-[:RATED|HAS_GENRE]-() } AS degree\nRETURN label,count(*) AS nodes,min(degree) AS minimum,avg(degree) AS mean,\n       percentileCont(degree,0.5) AS median,percentileCont(degree,0.95) AS p95,\n       percentileCont(degree,0.99) AS p99,max(degree) AS maximum\nORDER BY label",
+  "columns": [
+    "label",
+    "nodes",
+    "minimum",
+    "mean",
+    "median",
+    "p95",
+    "p99",
+    "maximum"
+  ],
+  "rows": [
+    {
+      "label": "Genre",
+      "nodes": 18,
+      "minimum": 44,
+      "mean": 356.0,
+      "median": 231.0,
+      "p95": 1260.4499999999994,
+      "p99": 1534.4899999999993,
+      "maximum": 1603
+    },
+    {
+      "label": "Movie",
+      "nodes": 3883,
+      "minimum": 1,
+      "mean": 259.23693020860196,
+      "median": 111,
+      "p95": 1035.8999999999996,
+      "p99": 1759.579999999995,
+      "maximum": 3430
+    },
+    {
+      "label": "User",
+      "nodes": 6040,
+      "minimum": 20,
+      "mean": 165.5975165562913,
+      "median": 96.0,
+      "p95": 556.0,
+      "p99": 906.659999999998,
+      "maximum": 2314
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

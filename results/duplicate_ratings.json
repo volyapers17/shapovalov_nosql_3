@@ -1,0 +1,29 @@
+{
+  "executed_at_utc": "2026-10-18T14:57:41.347893+00:00",
+  "seconds": 1.8274,
+  "query": "MATCH (u:User)-[r:RATED]->(m:Movie)\nWITH u,m,count(r) AS copies WHERE copies>1\nRETURN count(*) AS duplicatePairs",
+  "columns": [
+    "duplicatePairs"
+  ],
+  "rows": [
+    {
+      "duplicatePairs": 0
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

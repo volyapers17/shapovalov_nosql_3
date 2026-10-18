@@ -1,0 +1,65 @@
+{
+  "executed_at_utc": "2026-10-18T14:37:51.335461+00:00",
+  "seconds": 0.2416,
+  "query": "MATCH (:User {userId:1})-[r1:RATED]->(m:Movie)<-[r2:RATED]-(:User {userId:2})\nWHERE r1.rating >= 4 AND r2.rating >= 4\nRETURN m.movieId AS movieId,m.title AS title,r1.rating AS user1Rating,r2.rating AS user2Rating\nORDER BY movieId",
+  "columns": [
+    "movieId",
+    "title",
+    "user1Rating",
+    "user2Rating"
+  ],
+  "rows": [
+    {
+      "movieId": 1193,
+      "title": "One Flew Over the Cuckoo's Nest (1975)",
+      "user1Rating": 5,
+      "user2Rating": 5
+    },
+    {
+      "movieId": 1207,
+      "title": "To Kill a Mockingbird (1962)",
+      "user1Rating": 4,
+      "user2Rating": 4
+    },
+    {
+      "movieId": 1246,
+      "title": "Dead Poets Society (1989)",
+      "user1Rating": 4,
+      "user2Rating": 5
+    },
+    {
+      "movieId": 1962,
+      "title": "Driving Miss Daisy (1989)",
+      "user1Rating": 4,
+      "user2Rating": 5
+    },
+    {
+      "movieId": 2028,
+      "title": "Saving Private Ryan (1998)",
+      "user1Rating": 5,
+      "user2Rating": 4
+    },
+    {
+      "movieId": 3105,
+      "title": "Awakenings (1990)",
+      "user1Rating": 5,
+      "user2Rating": 4
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}

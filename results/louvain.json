@@ -1,0 +1,35 @@
+{
+  "executed_at_utc": "2026-10-18T14:40:31.007545+00:00",
+  "seconds": 1.346,
+  "query": "CALL gds.louvain.write('userGraph',\n {relationshipWeightProperty:'weight',writeProperty:'community',concurrency:1})\nYIELD communityCount,modularity,ranLevels,nodePropertiesWritten\nRETURN communityCount,modularity,ranLevels,nodePropertiesWritten",
+  "columns": [
+    "communityCount",
+    "modularity",
+    "ranLevels",
+    "nodePropertiesWritten"
+  ],
+  "rows": [
+    {
+      "communityCount": 4826,
+      "modularity": 0.158615421812715,
+      "ranLevels": 1,
+      "nodePropertiesWritten": 6040
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0,
+    "contains_system_updates": false,
+    "system_updates": 0
+  }
+}
